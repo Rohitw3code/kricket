@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#144ABA"
+    tools:context=".LoginAndSignUpActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginVertical="150sp"
+        app:lottie_rawRes="@raw/football"/>
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="100sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="enter your \nmobile number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_1"
+        android:layout_marginHorizontal="20sp">
+
+
+        <TextView
+            android:id="@+id/prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_round"
+            android:padding="10sp"
+            android:text="+91"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/prefix"
+            android:background="@drawable/right_round"
+            android:hint="phone number"
+            android:padding="10sp"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/relative_1"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_marginVertical="80sp"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_round"
+        android:text="next"/>
+
+</RelativeLayout>
